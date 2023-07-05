@@ -1,0 +1,26 @@
+{
+  "name": "libreriax",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libreriax/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libreriax",
+        "main": "packages/libreriax/src/index.ts",
+        "tsConfig": "packages/libreriax/tsconfig.lib.json",
+        "assets": ["packages/libreriax/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/libreriax/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myproyect-lates/libreriax": ["packages/libreriax/src/index.ts"],
+      "@myproyect-lates/mylib": ["packages/mylib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
