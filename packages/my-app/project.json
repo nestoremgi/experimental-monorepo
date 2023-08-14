@@ -5,9 +5,12 @@
   "sourceRoot": "packages/my-app/src",
   "targets": {
     "build": {
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+
       "executor": "@nxtensions/astro:build",
-      "options": {}
+      "configurations": {},
+      "options": {
+        "verbose": true
+      }
     },
     "dev": {
       "executor": "@nxtensions/astro:dev",
